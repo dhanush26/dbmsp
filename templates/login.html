@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Vivasayi.com</title>
+
+<link rel="stylesheet" href="{{url_for('static', filename = 'css/loga.css')}}" />
+
+
+
+
+
+</head>
+<body class="main">
+
+
+<div class="navbar">
+<div class="section"><a href="pphome.html" >Home</a>
+<a href="ppabtus.html" >About us</a>
+<a href="/" >Join Us</a>
+<a href="/login" >Log in</a>
+</div>
+<div class="section" align="center">
+
+
+	<form action="/loginn" method="post" class="form1" id="form1">
+<feldset form="form1">
+	<legend align="left" class="txt"> Log in </legend>
+	
+<legend class="txt"> Log in as :</legend>
+<span class="txt">You are </span><br>
+<select name="log" required="required"><optgroup  >
+<option disabled="disabled"selected="selected" > --Select--</option>
+<option >Consumer</option>
+<option >Cultivator</option>
+<option >Labour</option>
+
+
+</optgroup></select><br><br>
+
+<span class="txt">Username :</span>
+<input type="text" name="uname" placeholder="Username" required="required"><br>
+<span class="txt">Password :</span>
+<input type="text" name="pass" placeholder="Passsword" required="required"><br>
+
+<input  class="sub" type="submit" name="data" value="Submit">
+
+</fieldset>
+	
+	</form>
+	<div class="detailb" id="id1" style="display: none;">
+<div class="detail zoom">
+<div class="close" onclick="document.getElementById('id1').style.display='none';">&times;</div>
+<form action="view.php" method="post">
+<span class="txt">Enter your E-mail : </span><br><input type="email" name="em" placeholder="E-Mail" required="required"><br><br> 
+
+
+	<input type="submit" value='View Details' id='aaa' class="sub"  style="width: 200px; " />
+
+</form>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<div id="con">Ph:+91-8825432440<br><br>
+E-mail :dhanusree26@yahoo.com
+ <div id="add" align="right"> Address :Arjun Parthasarathy,<br>
+22/184,2<sup>nd</sup> Avenue,Anna nagar,<br>
+Chennai-600040.
+</div>
+</div>
+</div>
+</body>
+
+
+</html>

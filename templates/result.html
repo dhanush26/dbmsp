@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+   <body>
+      {{r}}
+
+      <table border = 1>
+		<tr><th>Harvest ID</th><th>Crop ID</th><th>Crop Name</th><th>From Date</th><th>Land ID</th><th>Processor ID</th></tr>
+         {% for i in range(n) %}
+            <tr>
+               <td> {{ r[i]['harvest_id'] }} </td>
+               <td> {{ r[i]['crop_id'] }} </td>
+               <td> {{ r[i]['name'] }} </td>
+               <td> {{ r[i]['from_date'] }} </td>
+               <td> {{ r[i]['land_id'] }} </td>
+               <td> {{ r[i]['processor_id'] }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>

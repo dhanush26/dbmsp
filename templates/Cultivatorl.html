@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Vivasayi.com</title>
+
+<link rel="stylesheet" href="{{url_for('static', filename = 'css/loga.css')}}" />
+<script type="text/javascript">
+	
+
+</script>
+<style type="text/css">
+	.section1{
+background-color: gray;
+padding: 1px;
+border-radius: 10px;
+margin-bottom: 10px;
+width: 45%;
+position: relative;
+left: 5%;
+}
+
+.txt22{
+
+font-family:new; 
+
+font-size: 50px;
+color: black;
+
+}
+
+
+
+</style>
+</head>
+<body class="main">
+
+
+<div class="navbar">
+<div class="section">
+<a href="ppabtus.html" >About us</a>
+<a href="/cultiadd" >Add Data</a>
+<a href="/cultiview" >View Data</a>
+<a href="/login" >Log Out</a>
+</div>
+<div class="section" align="center">
+<span class="txt" style="font-size: 25px;text-align: left;color: orange; position:relative;top:-10px;left: -475px; "  >loged in as: <span style="color: black">{{ row['name'] }}</span></span>
+</div>
+
+<div class="section" align="center">
+<span class="txt">Details  Of  Current  Project  under Process :</span>
+<br><br>
+
+<span class="txt22"><table border = 1>
+		<tr class="txt22"><th>Harvest ID</th><th>Crop ID</th><th>Crop Name</th><th>From Date</th><th>Land ID</th><th>Processor ID</th></tr>
+         {% for i in range(n) %}
+            <tr class="txt22">
+               <td> {{ r[i]['harvest_id'] }} </td>
+               <td> {{ r[i]['crop_id'] }} </td>
+               <td> {{ r[i]['name'] }} </td>
+               <td> {{ r[i]['from_date'] }} </td>
+               <td> {{ r[i]['land_id'] }} </td>
+               <td> {{ r[i]['processor_id'] }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+  </span>
+</div>
+
+
+<div class="section">
+<div id="con">Ph:{{row['phone_no']}}<br><br>
+E-mail : {{row['email']}}
+ <div id="add" align="right"> Address :{{row['address'][:8]}}<br>
+ 	{{row['address'][8:]}}
+</div>
+</div>
+</div>
+</body>
+
+
+</html>

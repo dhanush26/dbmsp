@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Vivasayi.com</title>
+
+<link rel="stylesheet" href="{{url_for('static', filename = 'css/loga.css')}}" />
+<script type="text/javascript">
+	
+
+</script>
+</head>
+<body class="main">
+
+
+<div class="navbar">
+<div class="section"><a href="pphome.html" >Home</a>
+
+<a href="ppabtus.html" >About us</a>
+<a href="ppjoinus.html" >Join Us</a>
+<a href="/login" >Log in</a>
+</div>
+<div class="section" align="center">
+
+<form action="/consumer" method="post" class="form1" id="form1">
+<feldset form="form1">
+<legend align="left" class="txt">  Consumer Details  </legend>
+	
+<legend class="txt"> Fill up the details </legend>
+<span class="txt">ID : </span>
+<input type="integer" name="id" placeholder="ID" ><br>
+<span class="txt">First Name : </span>
+<input type="text" name="fname" placeholder="First Name" required="required" ><br>
+
+<span class="txt">Last Name : </span>
+<input type="text" name="lname" placeholder="Last Name" ><br>
+<span class="txt">E-Mail : </span>
+<input type="email" name="email" placeholder="E-mail" required="required"><br>
+<span class="txt">Phone : </span>
+<input type="integer" name="phone" placeholder="Phone Number" required="required"><br>
+<span class="txt">Address : </span>
+<input type="text" name="addr" placeholder="Address" required="required"><br>
+<span class="txt">Username : </span>
+<input type="text" name="uname" placeholder="Username" required="required"><br>
+
+<span class="txt">Password : </span>
+<input type="text" name="pass" placeholder="password" required="required"><br>
+
+<input  class="sub" type="submit" name="data" value="Submit" >
+
+</fieldset>
+	
+	</form>
+	<div class="detailb" id="id1" style="display: none;">
+<div class="detail zoom">
+<div class="close" onclick="document.getElementById('id1').style.display='none';">&times;</div>
+<form action="view.php" method="post">
+<span class="txt">Enter your E-mail : </span><br><input type="email" name="em" placeholder="E-Mail" required="required"><br><br> 
+
+
+	<input type="submit" value='View Details' id='aaa' class="sub"  style="width: 200px; " />
+
+</form>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<div id="con">Ph:+91-8825432440<br><br>
+E-mail :dhanusree26@yahoo.com
+ <div id="add" align="right"> Address :Arjun Parthasarathy,<br>
+22/184,2<sup>nd</sup> Avenue,Anna nagar,<br>
+Chennai-600040.
+</div>
+</div>
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,238 @@
+.navbar{
+overflow: hidden;
+}
+
+
+ a{
+
+display:inline-block;
+color: black;
+padding: 8px 6px;
+text-align: center;
+text-decoration: none;
+font-size: 30px;
+width: 22.5%;
+font-family: text;
+}
+
+a:hover{
+background-color: #353535;
+color: white;
+opacity: 0.8; 
+
+}
+.main{
+background-color: #333;
+background-image: url('images/abc.jpg');
+background-size: cover;
+background-attachment: fixed;}
+
+
+.search{
+float: right;
+}
+video{
+z-index: 1;
+}
+.navbar img{
+position: relative;
+top: 0;
+left: 0;}
+
+.content{
+background-color: black;
+font-family: text;
+font-size: 20px;
+opacity: 0.8;
+color: white;
+position: relative;
+bottom: 200px;
+width: 80%;
+z-index: 3px;
+}
+.section{
+background-color: lightgray;
+padding: 15px;
+border-radius: 10px;
+margin-bottom: 10px;
+width: 90%;
+position: relative;
+left: 5%;
+right: 5%;
+}
+
+@font-face{
+font-family:myfont;
+src:url("fonts/Waterlily_Script.otf");
+
+}
+@font-face{
+font-family: new;
+src:url("fonts/ph.ttf");
+
+}
+
+
+@font-face{
+font-family: text;
+src:url("fonts/text.ttf");
+
+}
+
+
+.logo #\xt1{
+position: relative;
+top: 40px;
+left: 100px;
+font-family:myfont; 
+
+font-size: 100px;
+color: black;
+
+}
+.logo{
+background-image: url('images/dd.jpeg');
+background-size: cover;
+border
+}
+#con{
+font-family: new;
+padding: 10px;
+font-weight: bold;
+font-size: 30px;
+}
+#add{
+float: right;
+clear: both;
+position: relative;
+bottom: 70px;
+
+}
+
+.txt{
+	font-size: 30px;
+	font-family: text;
+}
+.ttt{
+font-size: 30px;
+	font-family: text;
+	position: relative;
+left: 0px;
+}
+
+input[type=text],input[type=email],[type=integer] {
+	
+padding:6px 8px;
+margin:12px 10px;
+position: relative;
+left: 0px;
+width: 50%;
+font-family: new;
+font-size: 30px;
+font-weight: bolder;
+
+}
+input[type=radio]{
+position: relative;
+left: -20px;
+}
+select {
+padding:6px 8px;
+margin:12px 10px;
+transition: width ;
+transition-duration: 2s;
+position: relative;
+left: 0px;
+width: 70%;
+font-family: new;
+font-size: 40px;
+font-weight: bolder;
+}
+.sub{
+padding: 10px 7px;
+background-color: #D5D5D5;
+color: black;
+font-family: text;
+width: 100px;
+text-align: center;
+border:2px solid #333;
+border-radius: 5px;
+box-shadow: 1px 1px 1px 1px #333;
+}
+.sub:hover{
+	background-color: #333;
+	color:white;	}
+	
+	@font-face{
+font-family: ne;
+src:url("fonts/tt.otf");
+
+}
+.tx{
+font-family: ne;
+font-size: 30px;
+position: relative;
+left: 20px;
+}
+
+
+.detailb{
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: black;
+background-color: rgba(0,0,0,0.4);
+border-radius: 10px;
+overflow: auto;
+z-index: 1;
+}
+.detail{
+background-color: lightgoldenrodyellow;
+opacity: 1;
+margin: 100px auto 100px auto;
+width: 70%;
+border-radius: 10px;
+padding: 20px;
+}
+.zoom{
+-webkit-animation: ami 2s;
+}
+-webkit-@keyframe ami{
+ from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+#idid:hover{
+letter-spacing: 3px;
+cursor:pointer;
+}
+.close{
+position: relative;
+top: 0;
+right: -1000px;
+color: black;
+font-size: 40px;
+font-weight: bold;
+}
+.close:hover{
+color: red;
+cursor: pointer;
+}
+fieldset{
+border:5px groove;
+}
+.list .litxt{
+word-spacing: 3px;
+letter-spacing:normal;
+font-family: text;
+transition: letter-spacing 1s; 
+vertical-align: middle;
+font-size: 30px;
+}
+.list .litxt:hover{
+letter-spacing: 3px;
+cursor:pointer;
+}
